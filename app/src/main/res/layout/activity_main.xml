@@ -7,13 +7,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.hypersoft.craftzone.TextCraft
+        android:id="@+id/cTv"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+
+        app:headingText="@string/this_is_heading"
+        app:headingColor="#F4E136"
+        app:headingUnderline="true"
+
+        app:headingSize="22sp"
+        app:headingStrikeThrough="true"
+        app:strikeHeadingText=" is "
+        app:headingGravity="center"
+        app:setGradientHead="true"
+        app:headingTextStyle="bold"
+        app:headingDrawableStart="@drawable/ic_after_save_tune"
+        app:headingDrawableEnd="@drawable/ic_after_save_tune"
+        app:gradientOrientationHeadText="vertical"
+        app:gradientSpecificHeadText="Heading"
+        app:headGradientStartColor="@color/white"
+        app:headGradientCenterColor="@color/white"
+        app:headGradientEndColor="@color/subheadingColor"
+
+        app:subheadingText="This is the Subheading"
+        app:subheadingColor="@color/subheadingColor"
+        app:subheadingSize="18sp"
+        app:subheadingStrikeThrough="true"
+        app:strikeSubheadingText="the"
+        app:subheadingGravity="start"
+        app:setGradientSubHead="true"
+        app:subheadingTextStyle="italic"
+        app:subheadGradientStartColor="@color/orange"
+        app:subheadGradientCenterColor="@color/black"
+        app:subheadGradientEndColor="@color/orange"
+
+
+        app:paragraphText="This is the data that provides additional information."
+        app:paragraphColor="@color/paragraphColor"
+        app:paragraphSize="16sp"
+        app:paragraphStrikeThrough="true"
+        app:strikeParagraphText="that provides"
+        app:paragraphGravity="start"
+        app:setGradientParagraph="true"
+        app:gradientOrientationParagraphText="horizontal"
+        app:paragraphGradientStartColor="@color/black"
+        app:paragraphGradientCenterColor="@color/white"
+        app:paragraphGradientEndColor="@color/black"
+        app:paragraphTextStyle="boldItalic"
+
+        app:verticalText="false"
+        app:verticalTextDirection="down"
+
+        app:gradientBackground="true"
+        app:gradientStartColor="@color/teal_200"
+        app:gradientCenterColor="@color/adsBgColor"
+        app:gradientEndColor="@color/teal_700"
+        app:gradientType="linear"
+        app:gradientOrientation="bottom_left_top_right"
+        app:gradientRadius="300"
+
+        app:cornerRadius="@dimen/_10sdp"
+        app:rippleEnabled="true"
+        app:rippleColor="@color/headingColor"
+        app:strokeWidth="@dimen/_1sdp"
+        app:strokeColor="@color/teal_700"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        android:background="@color/orange"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="@dimen/_3sdp"
+        android:translationZ="@dimen/_3sdp"
+        android:drawableTop="@drawable/ic_audio_player_premium"
+        android:drawableStart="@drawable/ic_setting_privacy_policy"
+        android:drawableEnd="@drawable/ic_setting_privacy_policy"
+        android:drawableBottom="@drawable/ic_setting_privacy_policy"
+        android:drawablePadding="@dimen/_5sdp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

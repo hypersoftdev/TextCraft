@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextCraft">
+
+        <attr name="cornerRadius" format="dimension" />
+        <!-- Existing attributes -->
+        <attr name="headingText" format="string" />
+        <attr name="headingColor" format="color" />
+        <attr name="headingSize" format="dimension" />
+        <attr name="headingUnderline" format="boolean" />
+        <attr name="headingUnderlineText" format="string"/>
+        <attr name="headingStrikeThrough" format="boolean" />
+        <attr name="strikeHeadingText" format="string" />
+        <attr name="gradientSpecificHeadText" format="string" />
+        <attr name="setGradientHead" format="boolean" />
+        <attr name="headGradientStartColor" format="color" />
+        <attr name="headGradientCenterColor" format="color" />
+        <attr name="headGradientEndColor" format="color" />
+        <attr name="gradientOrientationHeadText" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="diagonal" value="2" />
+        </attr>
+        <attr name="headingTextStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="boldItalic" value="3" />
+        </attr>
+        <attr name="headingGravity" format="enum">
+            <enum name="start" value="3" />
+            <enum name="center" value="5" />
+            <enum name="end" value="17" />
+        </attr>
+
+        <attr name="subheadingText" format="string" />
+        <attr name="subheadingColor" format="color" />
+        <attr name="subheadingSize" format="dimension" />
+        <attr name="subheadingUnderline" format="boolean" />
+        <attr name="subheadingUnderlineText" format="string"/>
+        <attr name="subheadingStrikeThrough" format="boolean" />
+        <attr name="strikeSubheadingText" format="string" />
+        <attr name="setGradientSubHead" format="boolean" />
+        <attr name="gradientSpecificSubHeadText" format="string" />
+        <attr name="subheadGradientStartColor" format="color" />
+        <attr name="subheadGradientCenterColor" format="color" />
+        <attr name="subheadGradientEndColor" format="color" />
+        <attr name="gradientOrientationSubHeadText" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="diagonal" value="2" />
+        </attr>
+        <attr name="subheadingTextStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="boldItalic" value="3" />
+        </attr>
+        <attr name="subheadingGravity" format="enum">
+            <enum name="start" value="3" />
+            <enum name="center" value="5" />
+            <enum name="end" value="17" />
+        </attr>
+
+        <attr name="paragraphText" format="string" />
+        <attr name="paragraphColor" format="color" />
+        <attr name="paragraphSize" format="dimension" />
+        <attr name="paragraphUnderline" format="boolean" />
+        <attr name="paragraphUnderlineText" format="string"/>
+        <attr name="paragraphStrikeThrough" format="boolean" />
+        <attr name="strikeParagraphText" format="string" />
+        <attr name="setGradientParagraph" format="boolean" />
+        <attr name="gradientSpecificParagraphText" format="string" />
+        <attr name="paragraphGradientStartColor" format="color" />
+        <attr name="paragraphGradientCenterColor" format="color" />
+        <attr name="paragraphGradientEndColor" format="color" />
+        <attr name="gradientOrientationParagraphText" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="diagonal" value="2" />
+        </attr>
+        <attr name="paragraphTextStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="boldItalic" value="3" />
+        </attr>
+        <attr name="paragraphGravity" format="enum">
+            <enum name="start" value="3" />
+            <enum name="center" value="5" />
+            <enum name="end" value="17" />
+        </attr>
+
+        <!-- Drawable attributes -->
+        <attr name="headingDrawableStart" format="reference" />
+        <attr name="headingDrawableEnd" format="reference" />
+        <attr name="subheadingDrawableStart" format="reference" />
+        <attr name="subheadingDrawableEnd" format="reference" />
+        <attr name="paragraphDrawableStart" format="reference" />
+        <attr name="paragraphDrawableEnd" format="reference" />
+
+        <!-- New attributes for vertical text and direction -->
+        <attr name="verticalText" format="boolean" />
+        <attr name="verticalTextDirection" format="enum">
+            <enum name="up" value="1" />
+            <enum name="down" value="0" />
+        </attr>
+
+        <attr name="rippleEnabled" format="boolean" />
+        <attr name="rippleColor" format="color" />
+
+        <!-- Stroke attributes -->
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+
+        <!-- Background attributes -->
+        <attr name="gradientBackground" format="boolean"/>
+        <attr name="gradientStartColor" format="color" />
+        <attr name="gradientCenterColor" format="color" />
+        <attr name="gradientEndColor" format="color" />
+        <attr name="gradientRadius" format="integer"/>
+
+        <attr name="gradientType" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+        <attr name="gradientOrientation" format="enum">
+            <enum name="top_bottom" value="0" />
+            <enum name="top_right_bottom_left" value="1" />
+            <enum name="right_left" value="2" />
+            <enum name="bottom_right_top_left" value="3" />
+            <enum name="bottom_top" value="4" />
+            <enum name="bottom_left_top_right" value="5" />
+            <enum name="left_right" value="6" />
+            <enum name="top_left_bottom_right" value="7" />
+        </attr>
+
+    </declare-styleable>
+</resources>

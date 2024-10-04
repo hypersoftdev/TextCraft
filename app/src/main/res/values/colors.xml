@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="subheadingColor">#D11B0E</color>
+    <color name="paragraphColor">#55B4F3</color>
+    <color name="headingColor">#49F436</color>
+    <color name="teal_200">#36CEF4</color>
+    <color name="adsBgColor">#B3B3B3</color>
+    <color name="darkerGray">#575757</color>
+    <color name="trasnsparentOrange">#66F56D07</color>
+    <color name="orange">#F4B536</color>
+    <color name="teal_700">#45006F</color>
 </resources>
