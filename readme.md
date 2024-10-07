@@ -2,42 +2,6 @@
 
 **TextCraft** is a powerful and flexible custom Android view that extends `MaterialTextView`, designed to provide advanced text styling capabilities. With support for gradient colors, strike-through, underline, drawable integration, vertical text alignment, and ripple effects, TextCraft allows developers to style heading, subheading, and paragraph sections individually. It also includes Kotlin extension methods for enhanced functionality and supports localized strike-through and gradient text effects.
 
-## Features
-
-- **Customizable Headings, Subheadings, and Paragraphs**
-  - Set text, color, size, underline, strike-through, text style (bold, italic), and gravity for each section.
-
-- **Gradient Support**
-  - Apply gradient effects separately to the heading, subheading, and paragraph sections.
-  - Customize start, center, and end colors of the gradient.
-  - Control gradient orientation (horizontal, vertical, diagonal) for each section.
-
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen1.png?raw=true)
-
-- **Strike-through and Underline**
-  - Apply strike-through and underline effects to specific substrings in the heading, subheading, and paragraph sections.
-
-- **Drawable Support**
-  - Add drawable icons to the start, center, or end of any section (heading, subheading, paragraph).
-
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen2.png?raw=true)
-
-- **Ripple Effect**
-  - Enable ripple effect on text click, with customizable ripple color.
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/screen_gif.gif?raw=true)
-
-
-- **Stroke, Background, and Corner Radius**
-  - Set stroke width and color around the text view.
-  - Apply gradient backgrounds (linear, radial, sweep) and control the corner radius for the view's background.
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen3.png?raw=true)
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen4.png?raw=true)
-
-- **Vertical Text and Direction**
-  - Enable vertical text alignment for all sections and control its direction (up or down).
-
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen5.png?raw=true)
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen6.png?raw=true)
 ## Gradle Integration
 
 ### Step A: Add Maven Repository
@@ -144,6 +108,43 @@ materialTextView.addImage("Insert Here", R.drawable.ic_image, imgWidth = 40, img
 | `verticalTextDirection`          | enum         | Set vertical text direction (up or down).                   |
 | `headingDrawableStart`, `subheadingDrawableStart`, `paragraphDrawableStart` | reference | Set drawable at the start of each section. |
 | `headingDrawableEnd`, `subheadingDrawableEnd`, `paragraphDrawableEnd` | reference | Set drawable at the end of each section.   |
+
+## Features
+
+- **Customizable Headings, Subheadings, and Paragraphs**
+  - Set text, color, size, underline, strike-through, text style (bold, italic), and gravity for each section.
+
+- **Gradient Support**
+  - Apply gradient effects separately to the heading, subheading, and paragraph sections.
+  - Customize start, center, and end colors of the gradient.
+  - Control gradient orientation (horizontal, vertical, diagonal) for each section.
+
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen1.png?raw=true)
+
+- **Strike-through and Underline**
+  - Apply strike-through and underline effects to specific substrings in the heading, subheading, and paragraph sections.
+
+- **Drawable Support**
+  - Add drawable icons to the start, center, or end of any section (heading, subheading, paragraph).
+
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen2.png?raw=true)
+
+- **Ripple Effect**
+  - Enable ripple effect on text click, with customizable ripple color.
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/screen_gif.gif?raw=true)
+
+
+- **Stroke, Background, and Corner Radius**
+  - Set stroke width and color around the text view.
+  - Apply gradient backgrounds (linear, radial, sweep) and control the corner radius for the view's background.
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen3.png?raw=true)
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen4.png?raw=true)
+
+- **Vertical Text and Direction**
+  - Enable vertical text alignment for all sections and control its direction (up or down).
+
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen5.png?raw=true)
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen6.png?raw=true)
 
 
 # Acknowledgements
