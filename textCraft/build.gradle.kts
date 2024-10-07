@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -36,4 +37,19 @@ dependencies {
     implementation(libs.material)
 
 
+}
+
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.hypersoft.textcraft"
+            artifactId = "textcraft"
+            version = "1.0.1"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
