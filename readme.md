@@ -28,6 +28,82 @@
 - **Vertical Text and Direction**
   - Enable vertical text alignment for all sections and control its direction (up or down).
 
+## Gradle Integration
+
+### Step A: Add Maven Repository
+
+In your project-level **build.gradle** or **settings.gradle** file, add the JitPack repository:
+```
+repositories {
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+```  
+
+### Step B: Add Dependencies
+
+In your app-level **build.gradle** file, add the library dependency. Use the latest version: 
+```
+implementation com.hypersoft.textcraft:x.x.x'
+```
+
+## Implementation
+
+### XML Example:
+
+```
+<com.example.customviews.TextCraft
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:headingText="Welcome"
+    app:headingColor="@color/black"
+    app:headingSize="24sp"
+    app:setGradientHead="true"
+    app:headGradientStartColor="@color/red"
+    app:headGradientCenterColor="@color/blue"
+    app:headGradientEndColor="@color/green"
+    app:subheadingText="Introduction"
+    app:subheadingColor="@color/gray"
+    app:subheadingSize="18sp"
+    app:subheadingStrikeThrough="true"
+    app:rippleEnabled="true"
+    app:rippleColor="@color/rippleEffect"
+    app:paragraphText="This is a customizable TextCraft view."
+    app:paragraphColor="@color/darkGray"
+    app:verticalText="false"/>
+```
+
+### Java/Kotlin
+
+### 1. Strike-through with Localization
+
+Applies a localized strike-through effect at the same position as in the English version of the text:
+
+```
+materialTextView.strikeThroughTextLocalized(R.string.full_text, "targetText")
+```
+
+### 2. Shade Text Color
+
+Apply a gradient shading effect to text:
+
+
+```
+val colors = intArrayOf(Color.RED, Color.BLUE)
+materialTextView.shadeTextColor("Gradient Text", colors)
+
+```
+
+### 3. Add Image in Center
+
+Insert an image in place of text:
+
+```
+materialTextView.addImage("Insert Here", R.drawable.ic_image, imgWidth = 40, imgHeight = 40)
+
+```
+
 
 ## Attribute Summary
 
@@ -58,58 +134,22 @@
 | `headingDrawableStart`, `subheadingDrawableStart`, `paragraphDrawableStart` | reference | Set drawable at the start of each section. |
 | `headingDrawableEnd`, `subheadingDrawableEnd`, `paragraphDrawableEnd` | reference | Set drawable at the end of each section.   |
 
-## Usage
 
-### XML Example:
+# Acknowledgements
+This work has been done by the contribution of the Nisar Baho.
 
-```
-<com.example.customviews.TextCraft
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:headingText="Welcome"
-    app:headingColor="@color/black"
-    app:headingSize="24sp"
-    app:setGradientHead="true"
-    app:headGradientStartColor="@color/red"
-    app:headGradientCenterColor="@color/blue"
-    app:headGradientEndColor="@color/green"
-    app:subheadingText="Introduction"
-    app:subheadingColor="@color/gray"
-    app:subheadingSize="18sp"
-    app:subheadingStrikeThrough="true"
-    app:rippleEnabled="true"
-    app:rippleColor="@color/rippleEffect"
-    app:paragraphText="This is a customizable TextCraft view."
-    app:paragraphColor="@color/darkGray"
-    app:verticalText="false"/>
-```
+# LICENSE
 
-## Extension Methods
+Copyright 2023 Hypersoft Inc
 
-### 1. Strike-through with Localization
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-Applies a localized strike-through effect at the same position as in the English version of the text:
+    http://www.apache.org/licenses/LICENSE-2.0
 
-```
-materialTextView.strikeThroughTextLocalized(R.string.full_text, "targetText")
-```
-
-### 2. Shade Text Color
-
-Apply a gradient shading effect to text:
-
-
-```
-val colors = intArrayOf(Color.RED, Color.BLUE)
-materialTextView.shadeTextColor("Gradient Text", colors)
-
-```
-
-### 3. Add Image in Center
-
-Insert an image in place of text:
-
-```
-materialTextView.addImage("Insert Here", R.drawable.ic_image, imgWidth = 40, imgHeight = 40)
-
-```
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
