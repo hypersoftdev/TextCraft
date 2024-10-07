@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/hypersoftdev/TextCraft.svg)](https://jitpack.io/#hypersoftdev/TextCraft)
+
 # TextCraft
 
 **TextCraft** is a powerful and flexible custom Android view that extends `MaterialTextView`, designed to provide advanced text styling capabilities. With support for gradient colors, strike-through, underline, drawable integration, vertical text alignment, and ripple effects, TextCraft allows developers to style heading, subheading, and paragraph sections individually. It also includes Kotlin extension methods for enhanced functionality and supports localized strike-through and gradient text effects.
@@ -17,7 +19,7 @@ repositories {
 
 ### Step B: Add Dependencies
 
-Next, include the library in your app-level **build.gradle** file. Replace x.x.x with the latest version
+Next, include the library in your app-level **build.gradle** file. Replace x.x.x with the latest version [![](https://jitpack.io/v/hypersoftdev/TextCraft.svg)](https://jitpack.io/#hypersoftdev/TextCraft)
 ```
 implementation com.github.hypersoftdev:TextCraft:x.x.x'
 ```
