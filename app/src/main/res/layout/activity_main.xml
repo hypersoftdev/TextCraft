@@ -7,11 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.hypersoft.craftzone.TextCraft
+    <com.hypersoft.textcraft.TextCraft
         android:id="@+id/cTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
         app:headingText="@string/this_is_heading"
         app:headingColor="#F4E136"
         app:headingUnderline="true"
@@ -67,10 +66,10 @@
         app:gradientOrientation="bottom_left_top_right"
         app:gradientRadius="300"
 
-        app:cornerRadius="@dimen/_10sdp"
+        app:cornerRadius="10dp"
         app:rippleEnabled="true"
         app:rippleColor="@color/headingColor"
-        app:strokeWidth="@dimen/_1sdp"
+        app:strokeWidth="2dp"
         app:strokeColor="@color/teal_700"
 
         app:layout_constraintStart_toStartOf="parent"
@@ -79,15 +78,15 @@
 
 
         android:background="@color/orange"
-        android:padding="@dimen/_5sdp"
-        android:layout_margin="@dimen/_5sdp"
-        android:elevation="@dimen/_3sdp"
-        android:translationZ="@dimen/_3sdp"
+        android:padding="5dp"
+        android:layout_margin="6dp"
+        android:elevation="4dp"
+        android:translationZ="4dp"
         android:drawableTop="@drawable/ic_audio_player_premium"
         android:drawableStart="@drawable/ic_setting_privacy_policy"
         android:drawableEnd="@drawable/ic_setting_privacy_policy"
         android:drawableBottom="@drawable/ic_setting_privacy_policy"
-        android:drawablePadding="@dimen/_5sdp"
+        android:drawablePadding="5dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

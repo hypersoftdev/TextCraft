@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hypersoft.craftzone"
+    namespace = "com.hypersoft.textcraft"
     compileSdk = 34
 
     defaultConfig {

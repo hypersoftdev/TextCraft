@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sample.textcraft"
+    namespace = "com.hypersoft.textcraft"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.sample.textcraft"
+        applicationId = "com.hypersoft.textcraft"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -36,14 +36,13 @@ android {
 }
 
 dependencies {
-    implementation(project(":textCraft"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    // SDP layout size && SSP Text sizes
-    implementation(libs.sdp.android)
-    implementation(libs.ssp.android)
+
+    // TextCraft Library
+    implementation(project(":textCraft"))
 
 }

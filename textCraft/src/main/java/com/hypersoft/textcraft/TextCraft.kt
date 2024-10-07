@@ -1,8 +1,7 @@
-package com.hypersoft.craftzone
+package com.hypersoft.textcraft
 
 import android.content.Context
 import android.content.res.ColorStateList
-import android.content.res.Configuration
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.LinearGradient
@@ -23,18 +22,15 @@ import android.text.style.AlignmentSpan
 import android.text.style.CharacterStyle
 import android.text.style.ForegroundColorSpan
 import android.text.style.RelativeSizeSpan
-import android.text.style.StyleSpan
 import android.text.style.StrikethroughSpan
+import android.text.style.StyleSpan
 import android.text.style.UnderlineSpan
 import android.util.AttributeSet
-import android.util.Log
 import android.view.Gravity
 import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import com.google.android.material.textview.MaterialTextView
-import com.hypersoft.craftzone.utils.VerticalImageSpan
-import java.util.Locale
+import com.hypersoft.textcraft.utils.VerticalImageSpan
 
 
 class TextCraft @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :

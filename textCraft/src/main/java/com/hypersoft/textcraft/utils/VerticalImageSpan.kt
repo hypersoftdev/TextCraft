@@ -1,4 +1,4 @@
-package com.hypersoft.craftzone.utils
+package com.hypersoft.textcraft.utils
 
 import android.graphics.Canvas
 import android.graphics.Paint

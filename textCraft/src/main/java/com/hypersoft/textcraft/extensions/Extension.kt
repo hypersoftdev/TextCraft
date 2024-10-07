@@ -1,4 +1,4 @@
-package com.hypersoft.craftzone.extensions
+package com.hypersoft.textcraft.extensions
 
 import android.content.res.Configuration
 import android.graphics.LinearGradient
@@ -17,7 +17,7 @@ import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textview.MaterialTextView
-import com.hypersoft.craftzone.utils.VerticalImageSpan
+import com.hypersoft.textcraft.utils.VerticalImageSpan
 import java.util.Locale
 
 object Extension {
