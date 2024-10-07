@@ -150,7 +150,7 @@ materialTextView.addImage("Insert Here", R.drawable.ic_image, imgWidth = 40, img
 
 This work would not have been possible without the invaluable contributions of **Nisar Bahoo**. His expertise, dedication, and unwavering support have been instrumental in bringing this project to fruition.
 
-Nisar Bahoo's profile photo
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/profile_image.jpg?raw=true)
 
 We are deeply grateful for Nisar Bahoo's involvement and his belief in the importance of this work. His contributions have made a significant impact, and we are honored to have had the opportunity to collaborate with him.
 
