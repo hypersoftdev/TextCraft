@@ -53,9 +53,9 @@ repositories {
 
 ### Step B: Add Dependencies
 
-In your app-level **build.gradle** file, add the library dependency. Use the latest version: 
+Next, include the library in your app-level **build.gradle** file. Replace x.x.x with the latest version
 ```
-implementation com.hypersoft.textcraft:x.x.x'
+implementation com.github.hypersoftdev:TextCraft:x.x.x'
 ```
 
 ## Implementation
