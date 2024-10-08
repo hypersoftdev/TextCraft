@@ -5,7 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.hypersoft.craftzone.MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/upperText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cTv"
+        android:text="This is the upper text"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textSize="20sp"/>
 
     <com.hypersoft.textcraft.TextCraft
         android:id="@+id/cTv"

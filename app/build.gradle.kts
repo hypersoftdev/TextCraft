@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.hypersoft.textcraft"
+    namespace = "com.hypersoft.craftzone"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hypersoft.textcraft"
+        applicationId = "com.hypersoft.craftzone"
         minSdk = 24
         targetSdk = 34
         versionCode = 135
@@ -43,7 +43,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
+    implementation(libs.textcraft)
+
     // TextCraft Library
-    implementation(project(":textCraft"))
+//    implementation(project(":textCraft"))
 
 }
