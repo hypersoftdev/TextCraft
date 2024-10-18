@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hypersoft.craftzone.MainActivity">
+    tools:context="com.hypersoft.textcraft.MainActivity">
 
 <!--    <com.hypersoft.textcraft.TextCraft-->
 <!--        android:layout_width="match_parent"-->
