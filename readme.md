@@ -2,13 +2,15 @@
 
 # TextCraft
 
-**TextCraft** is a powerful and flexible custom Android view that extends `MaterialTextView`, designed to provide advanced text styling capabilities. With support for gradient colors, strike-through, underline, drawable integration, vertical text alignment, and ripple effects, TextCraft allows developers to style heading, subheading, and paragraph sections individually. It also includes Kotlin extension methods for enhanced functionality and supports localized strike-through and gradient text effects.
+**TextCraft** is a powerful and flexible custom Android view that extends `MaterialTextView`, designed to provide advanced text styling capabilities. With support for gradient colors, strike-through, underline, drawable integration, vertical text alignment, and ripple effects, TextCraft allows developers to style heading, subheading, and paragraph sections individually. It also includes Kotlin extension methods for enhanced functionality and supports localized strike-through and gradient text
+effects.
 
 ## Gradle Integration
 
 ### Step A: Add Maven Repository
 
 In your project-level **build.gradle** or **settings.gradle** file, add the JitPack repository:
+
 ```
 repositories {
     google()
@@ -20,6 +22,7 @@ repositories {
 ### Step B: Add Dependencies
 
 Next, include the library in your app-level **build.gradle** file. Replace x.x.x with the latest version [![](https://jitpack.io/v/hypersoftdev/TextCraft.svg)](https://jitpack.io/#hypersoftdev/TextCraft)
+
 ```
 implementation com.github.hypersoftdev:TextCraft:x.x.x'
 ```
@@ -50,7 +53,215 @@ implementation com.github.hypersoftdev:TextCraft:x.x.x'
     app:verticalText="false"/>
 ```
 
-### Java/Kotlin
+## Attribute Summary
+
+| Attribute                                                                   | Format           | Description                                                  |
+|-----------------------------------------------------------------------------|------------------|--------------------------------------------------------------|
+| `cornerRadius`                                                              | dimension        | Set corner radius for the view's background.                 |
+| `headingText`                                                               | string           | Text for the heading.                                        |
+| `headingColor`                                                              | color            | Color for the heading text.                                  |
+| `headingSize`                                                               | dimension        | Font size for the heading text.                              |
+| `headingUnderline`                                                          | boolean          | Enable/disable underline for the heading.                    |
+| `headingUnderlineText`                                                      | string           | Apply underline to a specific substring in the heading.      |
+| `headingStrikeThrough`                                                      | boolean          | Enable/disable strike-through effect for the heading.        |
+| `strikeHeadingText`                                                         | string           | Apply strike-through to a specific substring in the heading. |
+| `setGradientHead`                                                           | boolean          | Enable/disable gradient for the heading text.                |
+| `gradientSpecificHeadText`                                                  | string           | Apply gradient to a specific substring in the heading.       |
+| `headGradientStartColor`                                                    | color            | Start color for heading gradient.                            |
+| `headGradientCenterColor`                                                   | color            | Center color for heading gradient.                           |
+| `headGradientEndColor`                                                      | color            | End color for heading gradient.                              |
+| `gradientOrientationHeadText`                                               | enum             | Set gradient orientation (horizontal, vertical, diagonal).   |
+| `headingTextStyle`                                                          | enum             | Set heading text style (normal, bold, italic, boldItalic).   |
+| `headingGravity`                                                            | enum             | Set gravity (start, center, end) for heading text.           |
+| `subheadingText`, `paragraphText`                                           | string           | Similar attributes for subheading and paragraph sections.    |
+| `rippleEnabled`                                                             | boolean          | Enable/disable ripple effect on text click.                  |
+| `rippleColor`                                                               | color            | Set ripple color when enabled.                               |
+| `strokeWidth`, `strokeColor`                                                | dimension, color | Set stroke width and color around the text view.             |
+| `verticalText`                                                              | boolean          | Enable vertical text for the sections.                       |
+| `verticalTextDirection`                                                     | enum             | Set vertical text direction (up or down).                    |
+| `headingDrawableStart`, `subheadingDrawableStart`, `paragraphDrawableStart` | reference        | Set drawable at the start of each section.                   |
+| `headingDrawableEnd`, `subheadingDrawableEnd`, `paragraphDrawableEnd`       | reference        | Set drawable at the end of each section.                     |
+
+## Features
+
+- **Customizable Headings, Subheadings, and Paragraphs**
+    - Set text, color, size, underline, strike-through, text style (bold, italic), and gravity for each section.
+    - **Heading Usage**
+  ```
+      app:headingText="@string/this_is_heading"
+      app:headingColor="#219E40"
+      app:headingSize="22sp"
+      app:headingGravity="end"
+      app:headingTextStyle="bold"
+  ```
+    - **SubHeading Usage**
+  ```
+      app:subheadingText="This is the Subheading"
+      app:subheadingColor="@color/subheadingColor"
+      app:subheadingSize="18sp"
+      app:subheadingGravity="end"
+      app:subheadingTextStyle="italic"
+  ```
+    - **Paragraph Usage**
+  ```
+      app:paragraphText="This is the Paragraph that provides additional information."
+      app:paragraphColor="@color/paragraphColor"
+      app:paragraphSize="16sp"
+      app:paragraphGravity="end"
+      app:paragraphTextStyle="boldItalic"
+  ```
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen1.png?raw=true)
+
+   - **Gradient Support**
+        - Apply gradient effects separately to the heading, subheading, and paragraph sections and also sub sections of each.
+        - Customize start, center, and end colors of the gradient.
+        - Control gradient orientation (horizontal, vertical, diagonal) for each section.
+        - **Heading Usage**
+      ```
+          app:setGradientHead="true"
+          app:gradientOrientationHeadText="vertical" 
+          app:gradientSpecificHeadText="Heading" <!-- leave it empty or dont use if want to apply on full -->
+          app:headGradientStartColor="@color/white"
+          app:headGradientCenterColor="@color/teal_200"
+          app:headGradientEndColor="@color/subheadingColor"
+      ```
+        - **SubHeading Usage**
+      ```
+          app:setGradientSubHead="true"
+          app:gradientOrientationSubHeadText="horizontal"
+          app:gradientSpecificSubHeadText="This is the" <!-- leave it empty or dont use if want to apply on full -->
+          app:subheadGradientStartColor="@color/orange"
+          app:subheadGradientCenterColor="@color/black"
+          app:subheadGradientEndColor="@color/orange"
+      ```
+        - **Paragraph Usage**
+      ```
+          app:setGradientParagraph="true"
+          app:gradientSpecificParagraphText=""
+          app:gradientOrientationParagraphText="horizontal"
+          app:paragraphGradientStartColor="@color/black"
+          app:paragraphGradientCenterColor="@color/teal_200"
+          app:paragraphGradientEndColor="@color/black"
+      ```
+
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen2.png?raw=true)
+
+- **Strike-through and Underline**
+    - Apply strike-through and underline effects to specific substrings in the heading, subheading, and paragraph sections.
+    - **UnderLine**
+        - **Heading Usage**
+        ```
+           app:headingUnderline="true"
+           app:headingUnderlineText="is Heading"
+        ```
+        - **SubHeading Usage**
+        ```
+           app:subheadingUnderline="true"
+           app:subheadingUnderlineText=""
+        ```
+        - **Paragraph Usage**
+        ```
+           app:paragraphUnderline="true"
+           app:paragraphUnderlineText=""
+        ```
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen3.png?raw=true)
+
+   - **Strike-through**
+        - **Heading Usage**
+        ```
+           app:headingStrikeThrough="true"
+           app:strikeHeadingText="is Heading"
+        ```
+        - **SubHeading Usage**
+        ```
+           app:subheadingStrikeThrough="true"
+           app:strikeSubheadingText="the"
+        ```
+        - **Paragraph Usage**
+        ```
+           app:paragraphStrikeThrough="true"
+           app:strikeParagraphText="that provides"
+        ```
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen4.png?raw=true)
+
+- **Drawable Support**
+    - Add drawable icons to the start, center, or end of any section (heading, subheading, paragraph).
+    - **Heading Usage**
+  ```
+        app:headingDrawableStart="@drawable/ic_audio_player_premium"
+        app:headingDrawableEnd="@drawable/ic_audio_player_premium"
+  ```
+    - **SubHeading Usage**
+  ```
+        app:subheadingDrawableStart="@drawable/ic_setting_privacy_policy"
+        app:subheadingDrawableEnd="@drawable/ic_setting_privacy_policy"
+
+  ```
+    - **Paragraph Usage**
+  ```
+        app:paragraphDrawableStart="@drawable/left_shape"
+        app:paragraphDrawableEnd="@drawable/right_shape"
+  ```
+    - **Drawable in Centre**
+  ```
+        val textCraft = findViewById<TextCraft>(R.id.ctv2)
+        textCraft.addImage("placeholder", R.drawable.ic_bs_coins_in_text, imgWidth = 40, imgHeight = 40)
+  ```
+
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen5.png?raw=true)
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen6.png?raw=true)
+
+- **Ripple Effect**
+    - Enable ripple effect on text click, with customizable ripple color.
+    - **Usage**
+  ```
+        app:rippleEnabled="true"
+        app:rippleColor="@color/headingColor"
+  ```
+  
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/screen_gif.gif?raw=true)
+
+
+- **Stroke, Background, and Corner Radius**
+    - Set stroke width and color around the text view.
+    - Apply gradient backgrounds (linear, radial, sweep) and control the corner radius for the view's background.
+  - **Stroke**
+  ```
+        app:strokeColor="@color/trasnsparentOrange"
+        app:strokeWidth="2dp"
+  ```
+  ![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen8.png?raw=true)
+
+    - **Background**
+  ```
+        app:gradientBackground="true"
+        app:gradientStartColor="@color/teal_200"
+        app:gradientCenterColor="@color/adsBgColor"
+        app:gradientEndColor="@color/teal_700"
+        app:gradientType="linear"
+        app:gradientOrientation="bottom_left_top_right"
+        app:gradientRadius="300"
+
+  ```
+  ![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen9.png?raw=true)
+
+    - **Corner Radius**
+  ```
+       app:cornerRadius="16dp"
+  ```
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen10.png?raw=true)
+
+- **Vertical Text and Direction**
+    - Enable vertical text alignment for all sections and control its direction (up or down).
+  ```
+        app:verticalText="true"
+        app:verticalTextDirection="down"
+  ```
+
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen11.png?raw=true)
+ 
+
+### Kotlin MaterialTextView Helpers
 
 ### 1. Strike-through with Localization
 
@@ -64,10 +275,13 @@ materialTextView.strikeThroughTextLocalized(R.string.full_text, "targetText")
 
 Apply a gradient shading effect to text:
 
-
 ```
-val colors = intArrayOf(Color.RED, Color.BLUE)
-materialTextView.shadeTextColor("Gradient Text", colors)
+val colorArray = intArrayOf(
+            resources.getColor(R.color.darkerGray, this.theme),
+            resources.getColor(R.color.teal_200, this.theme),
+            resources.getColor(R.color.darkerGray, this.theme),
+        )
+materialTextView.shadeTextColor("Gradient Text", colorArray)
 
 ```
 
@@ -81,73 +295,6 @@ materialTextView.addImage("Insert Here", R.drawable.ic_image, imgWidth = 40, img
 ```
 
 ![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen7.png?raw=true)
-
-## Attribute Summary
-
-| Attribute                       | Format       | Description                                                |
-|----------------------------------|--------------|------------------------------------------------------------|
-| `cornerRadius`                   | dimension    | Set corner radius for the view's background.                |
-| `headingText`                    | string       | Text for the heading.                                       |
-| `headingColor`                   | color        | Color for the heading text.                                 |
-| `headingSize`                    | dimension    | Font size for the heading text.                             |
-| `headingUnderline`               | boolean      | Enable/disable underline for the heading.                   |
-| `headingUnderlineText`           | string       | Apply underline to a specific substring in the heading.     |
-| `headingStrikeThrough`           | boolean      | Enable/disable strike-through effect for the heading.        |
-| `strikeHeadingText`              | string       | Apply strike-through to a specific substring in the heading.|
-| `setGradientHead`                | boolean      | Enable/disable gradient for the heading text.               |
-| `gradientSpecificHeadText`       | string       | Apply gradient to a specific substring in the heading.      |
-| `headGradientStartColor`         | color        | Start color for heading gradient.                           |
-| `headGradientCenterColor`        | color        | Center color for heading gradient.                          |
-| `headGradientEndColor`           | color        | End color for heading gradient.                             |
-| `gradientOrientationHeadText`    | enum         | Set gradient orientation (horizontal, vertical, diagonal).  |
-| `headingTextStyle`               | enum         | Set heading text style (normal, bold, italic, boldItalic).  |
-| `headingGravity`                 | enum         | Set gravity (start, center, end) for heading text.          |
-| `subheadingText`, `paragraphText`| string       | Similar attributes for subheading and paragraph sections.   |
-| `rippleEnabled`                  | boolean      | Enable/disable ripple effect on text click.                 |
-| `rippleColor`                    | color        | Set ripple color when enabled.                              |
-| `strokeWidth`, `strokeColor`     | dimension, color | Set stroke width and color around the text view.           |
-| `verticalText`                   | boolean      | Enable vertical text for the sections.                      |
-| `verticalTextDirection`          | enum         | Set vertical text direction (up or down).                   |
-| `headingDrawableStart`, `subheadingDrawableStart`, `paragraphDrawableStart` | reference | Set drawable at the start of each section. |
-| `headingDrawableEnd`, `subheadingDrawableEnd`, `paragraphDrawableEnd` | reference | Set drawable at the end of each section.   |
-
-## Features
-
-- **Customizable Headings, Subheadings, and Paragraphs**
-  - Set text, color, size, underline, strike-through, text style (bold, italic), and gravity for each section.
-
-- **Gradient Support**
-  - Apply gradient effects separately to the heading, subheading, and paragraph sections.
-  - Customize start, center, and end colors of the gradient.
-  - Control gradient orientation (horizontal, vertical, diagonal) for each section.
-
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen1.png?raw=true)
-
-- **Strike-through and Underline**
-  - Apply strike-through and underline effects to specific substrings in the heading, subheading, and paragraph sections.
-
-- **Drawable Support**
-  - Add drawable icons to the start, center, or end of any section (heading, subheading, paragraph).
-
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen2.png?raw=true)
-
-- **Ripple Effect**
-  - Enable ripple effect on text click, with customizable ripple color.
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/screen_gif.gif?raw=true)
-
-
-- **Stroke, Background, and Corner Radius**
-  - Set stroke width and color around the text view.
-  - Apply gradient backgrounds (linear, radial, sweep) and control the corner radius for the view's background.
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen3.png?raw=true)
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen4.png?raw=true)
-
-- **Vertical Text and Direction**
-  - Enable vertical text alignment for all sections and control its direction (up or down).
-
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen5.png?raw=true)
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen6.png?raw=true)
-
 
 # Acknowledgements
 

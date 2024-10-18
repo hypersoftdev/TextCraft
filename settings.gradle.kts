@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 rootProject.name = "TextCraft"
 include(":app")
 
-//include(":textCraft")
+include(":textCraft")

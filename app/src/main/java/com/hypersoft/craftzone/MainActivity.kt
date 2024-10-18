@@ -25,16 +25,20 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val textCraft = findViewById<TextCraft>(R.id.cTv)
-        val upperText = findViewById<MaterialTextView>(R.id.upperText)
-        textCraft.addImage("placeholder", R.drawable.ic_bs_coins_in_text, imgWidth = 40, imgHeight = 40)
+//        val upperText = findViewById<MaterialTextView>(R.id.upperText)
+        val textCraft = findViewById<TextCraft>(R.id.ctv2)
+        textCraft.addImage("^%^", R.drawable.ic_bs_coins_in_text, imgWidth = 40, imgHeight = 40)
         textCraft.setOnClickListener {
             // Handle click event here
         }
 
 
-
-        upperText.shadeTextColor(upperText.text.toString(),  intArrayOf(Color.RED,Color.BLUE))
+//        val colorArray = intArrayOf(
+//            resources.getColor(R.color.darkerGray, this.theme),
+//            resources.getColor(R.color.teal_200, this.theme),
+//            resources.getColor(R.color.darkerGray, this.theme),
+//        )
+//        upperText.shadeTextColor(upperText.text.toString(), colorArray)
 
 
     }

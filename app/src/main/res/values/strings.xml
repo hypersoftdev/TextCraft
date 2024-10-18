@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TextCraft</string>
-    <string name="this_is_heading">Use Coins placeholder in Heading</string>
+    <string name="this_is_heading">This is Heading</string>
+    <string name="useCoinsInHeading">Use Coins placeholder in Heading</string>
+    <string name="useCoinsInSubHeading">Use Coins placeholder in SubHeading</string>
+    <string name="useCoinsInPara">Use Coins placeholder in Paragraph</string>
 </resources>

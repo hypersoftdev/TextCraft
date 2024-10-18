@@ -43,9 +43,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    implementation(libs.textcraft)
+//    implementation(libs.textcraft)
 
     // TextCraft Library
-//    implementation(project(":textCraft"))
+    implementation(project(":textCraft"))
 
 }

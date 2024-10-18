@@ -1,33 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.hypersoft.craftzone.MainActivity">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/upperText"
+<!--    <com.hypersoft.textcraft.TextCraft-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        app:headingText="@string/this_is_heading"-->
+<!--        app:headingColor="#219E40"-->
+<!--        app:headingSize="22sp"-->
+<!--        app:headingGravity="start"-->
+<!--        app:headingTextStyle="bold"-->
+
+<!--        app:subheadingText="This is the Subheading"-->
+<!--        app:subheadingColor="@color/subheadingColor"-->
+<!--        app:subheadingSize="18sp"-->
+<!--        app:subheadingGravity="start"-->
+<!--        app:subheadingTextStyle="italic"-->
+
+<!--        app:paragraphText="This is the Paragraph that provides additional information."-->
+<!--        app:paragraphColor="@color/paragraphColor"-->
+<!--        app:paragraphSize="16sp"-->
+<!--        app:paragraphGravity="start"-->
+<!--        app:paragraphTextStyle="boldItalic"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        android:background="@color/lightGray"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_margin="8dp"-->
+
+<!--        />-->
+
+<!--    <com.hypersoft.textcraft.TextCraft-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        app:headingText="@string/this_is_heading"-->
+<!--        app:headingColor="#39813D"-->
+<!--        app:headingSize="22sp"-->
+<!--        app:headingGravity="start"-->
+<!--        app:headingTextStyle="bold"-->
+
+<!--        app:setGradientHead="true"-->
+<!--        app:gradientOrientationHeadText="vertical"-->
+<!--        app:gradientSpecificHeadText="Heading"-->
+<!--        app:headGradientStartColor="@color/white"-->
+<!--        app:headGradientCenterColor="@color/teal_200"-->
+<!--        app:headGradientEndColor="@color/subheadingColor"-->
+
+<!--        app:subheadingText="This is the Subheading"-->
+<!--        app:subheadingColor="@color/subheadingColor"-->
+<!--        app:subheadingSize="18sp"-->
+<!--        app:subheadingGravity="start"-->
+<!--        app:subheadingTextStyle="italic"-->
+
+
+<!--        app:setGradientSubHead="true"-->
+<!--        app:gradientOrientationSubHeadText="horizontal"-->
+<!--        app:gradientSpecificSubHeadText="This is the"-->
+<!--        app:subheadGradientStartColor="@color/orange"-->
+<!--        app:subheadGradientCenterColor="@color/black"-->
+<!--        app:subheadGradientEndColor="@color/orange"-->
+
+<!--        app:paragraphText="This is the Paragraph that provides additional information."-->
+<!--        app:paragraphColor="@color/paragraphColor"-->
+<!--        app:paragraphSize="16sp"-->
+<!--        app:paragraphGravity="start"-->
+<!--        app:paragraphTextStyle="boldItalic"-->
+
+<!--        app:setGradientParagraph="true"-->
+<!--        app:gradientOrientationParagraphText="horizontal"-->
+<!--        app:gradientSpecificParagraphText=""-->
+<!--        app:paragraphGradientStartColor="@color/black"-->
+<!--        app:paragraphGradientCenterColor="@color/teal_200"-->
+<!--        app:paragraphGradientEndColor="@color/black"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        android:background="@color/lightGray"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_margin="8dp"-->
+
+
+<!--        />-->
+
+    <com.hypersoft.textcraft.TextCraft
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:headingText="@string/this_is_heading"
+        app:headingColor="#39813D"
+        app:headingSize="22sp"
+        app:headingGravity="start"
+        app:headingTextStyle="bold"
+
+
+
+
+        app:subheadingText="This is the Subheading"
+        app:subheadingColor="@color/subheadingColor"
+        app:subheadingSize="18sp"
+        app:subheadingGravity="start"
+        app:subheadingTextStyle="italic"
+
+
+
+
+
+        app:paragraphText="This is the Paragraph that provides additional information."
+        app:paragraphColor="#1C567C"
+        app:paragraphSize="16sp"
+        app:paragraphGravity="start"
+        app:paragraphTextStyle="boldItalic"
+
+        app:cornerRadius="16dp"
+
+        app:strokeColor="@color/trasnsparentOrange"
+        app:strokeWidth="2dp"
+
+        app:verticalText="true"
+        app:verticalTextDirection="down"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:background="#C8C8C8"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        />
+
+    <com.hypersoft.textcraft.TextCraft
+        android:id="@+id/ctv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        app:headingText="@string/this_is_heading"
+        app:headingColor="#39813D"
+        app:headingSize="18sp"
+        app:headingGravity="center"
+        app:headingTextStyle="bold"
+        app:setGradientHead="true"
+        app:gradientOrientationHeadText="vertical"
+        app:gradientSpecificHeadText=""
+        app:headGradientStartColor="@color/white"
+        app:headGradientCenterColor="@color/teal_200"
+        app:headGradientEndColor="@color/subheadingColor"
+
+        app:headingDrawableStart="@drawable/ic_audio_player_premium"
+        app:headingDrawableEnd="@drawable/ic_audio_player_premium"
+
+        app:subheadingText="This is the Subheading"
+        app:subheadingColor="@color/subheadingColor"
+        app:subheadingSize="16sp"
+        app:subheadingGravity="center"
+        app:subheadingTextStyle="italic"
+        app:setGradientSubHead="true"
+        app:gradientOrientationSubHeadText="horizontal"
+        app:gradientSpecificSubHeadText="This is the"
+        app:subheadGradientStartColor="@color/orange"
+        app:subheadGradientCenterColor="@color/black"
+        app:subheadGradientEndColor="@color/orange"
+
+        app:subheadingDrawableStart="@drawable/ic_setting_privacy_policy"
+        app:subheadingDrawableEnd="@drawable/ic_setting_privacy_policy"
+
+        app:paragraphText="This is the Paragraph that provides additional information."
+        app:paragraphColor="@color/paragraphColor"
+        app:paragraphSize="14sp"
+        app:paragraphGravity="start"
+        app:paragraphTextStyle="boldItalic"
+        app:setGradientParagraph="true"
+        app:gradientOrientationParagraphText="horizontal"
+        app:gradientSpecificParagraphText=""
+        app:paragraphGradientStartColor="@color/black"
+        app:paragraphGradientCenterColor="@color/teal_200"
+        app:paragraphGradientEndColor="@color/black"
+
+        app:paragraphDrawableStart="@drawable/left_shape"
+        app:paragraphDrawableEnd="@drawable/right_shape"
+
+
+
+
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cTv"
-        android:text="This is the upper text"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_margin="5dp"
-        android:textSize="20sp"/>
+
+        android:background="#E99EA9"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        />
 
     <com.hypersoft.textcraft.TextCraft
         android:id="@+id/cTv"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         app:headingText="@string/this_is_heading"
         app:headingColor="#F4E136"
         app:headingUnderline="true"
-
         app:headingSize="22sp"
         app:headingStrikeThrough="true"
         app:strikeHeadingText=" is "
@@ -102,4 +287,4 @@
         android:drawablePadding="5dp"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
