@@ -209,7 +209,7 @@ implementation com.github.hypersoftdev:TextCraft:x.x.x'
   ```
 
 ![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen5.png?raw=true)
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen6.png?raw=true)
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen6.jpg?raw=true)
 
 - **Ripple Effect**
     - Enable ripple effect on text click, with customizable ripple color.
@@ -230,7 +230,7 @@ implementation com.github.hypersoftdev:TextCraft:x.x.x'
         app:strokeColor="@color/trasnsparentOrange"
         app:strokeWidth="2dp"
   ```
-  ![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen8.png?raw=true)
+  ![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen8.PNG?raw=true)
 
     - **Background**
   ```
@@ -249,7 +249,7 @@ implementation com.github.hypersoftdev:TextCraft:x.x.x'
   ```
        app:cornerRadius="16dp"
   ```
-![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen10.png?raw=true)
+![screenshot](https://github.com/hypersoftdev/TextCraft/blob/master/Screens/Screen10.PNG?raw=true)
 
 - **Vertical Text and Direction**
     - Enable vertical text alignment for all sections and control its direction (up or down).
