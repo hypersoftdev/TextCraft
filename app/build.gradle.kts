@@ -47,5 +47,5 @@ dependencies {
 
     // TextCraft Library
     implementation(project(":textCraft"))
-
+//    implementation("com.github.hypersoftdev:TextCraft:1.3.5")
 }
