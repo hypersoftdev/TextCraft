@@ -32,7 +32,7 @@ implementation com.github.hypersoftdev:TextCraft:x.x.x'
 ### XML Example:
 
 ```
-<com.example.customviews.TextCraft
+<com.hypersoft.textcraft.TextCraft
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:headingText="Welcome"
